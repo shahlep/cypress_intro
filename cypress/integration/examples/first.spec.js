@@ -1,8 +1,11 @@
 describe('First test', () => {
-    it('First test assert',()=>{
-        expect(true).to.equal(true)
-    })
     it('visit website - google',()=>{
         cy.visit('https://www.google.com')
+    })
+    it('assertion- check url',()=>{
+        cy.url().should('include', 'google')
+    })
+    it('check element visible',()=>{
+        cy.get('h1').should('be.visible')
     })
 })
