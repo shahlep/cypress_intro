@@ -1,0 +1,26 @@
+{
+  "name": "cypress_intro",
+  "version": "1.0.0",
+  "description": "Automating with cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahlep/cypress_intro.git"
+  },
+  "keywords": [
+    "Automation",
+    "Cypress"
+  ],
+  "author": "Shah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shahlep/cypress_intro/issues"
+  },
+  "homepage": "https://github.com/shahlep/cypress_intro#readme",
+  "dependencies": {
+    "cypress": "^9.5.0"
+  }
+}
