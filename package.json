@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/shahlep/cypress_intro#readme",
   "dependencies": {
-    "cypress": "^9.5.0"
+    "cypress": "^9.5.0",
+    "prettier": "^2.5.1"
   }
 }
