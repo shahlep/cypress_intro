@@ -17,11 +17,12 @@ describe('This for login scenario', () => {
         cy.contains('Sign in').click()
     })
     it('error check', () => {
-        cy.get('.alert-error').should('be.visible')
+        cy.get('.alert-error').should('be.visible').and('contain',
+        'Login and/or password are wrong.')
     })
     it('checkbox fun', () => {
         cy.get('#user_remember_me').click()
-        cy.wait(5000)
+        //cy.wait(5000)
         cy.get('input[type="checkbox"]').click()
     })
 })
