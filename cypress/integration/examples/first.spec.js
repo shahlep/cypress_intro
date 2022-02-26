@@ -29,5 +29,8 @@ describe('website page test', () => {
     it('Olio url check', () => {
         cy.url().should('include','olio_984/index.html')
     })
+    it('Check book Olio price', () => {
+        cy.get('.product_main > .price_color').contains('£23.88')
+    })
 
 })
