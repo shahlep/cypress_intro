@@ -9,7 +9,10 @@ describe('website page test', () => {
         cy.get('h1').should('be.visible')
     })
     it('click an element',()=>{
-        cy.get('a').contains('Travel').click()
+        cy.get('a').contains('Classics').click()
     })
+    it('assertion - check url', () => {
+        cy.url().should('include','classics_6/index.html')
+    });
 
 })
