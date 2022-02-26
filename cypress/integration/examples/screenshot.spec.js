@@ -4,6 +4,6 @@ describe('Screenshot tests', () => {
         cy.screenshot({capture:'fullPage'})
     })
     it('Single element screenshot', () => {
-        
+        cy.get('h1').screenshot()
     })
 })
