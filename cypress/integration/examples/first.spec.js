@@ -14,5 +14,8 @@ describe('website page test', () => {
     it('assertion - check url', () => {
         cy.url().should('include','classics_6/index.html')
     });
+    it('should contain correct number of books', () => {
+        cy.get('.product_pod').its('length').should('eq',19)
+    });
 
 })
