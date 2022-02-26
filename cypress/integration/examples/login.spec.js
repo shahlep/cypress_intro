@@ -6,6 +6,7 @@ describe('This for login scenario', () => {
     it('check url', () => {
         cy.viewport('iphone-6+')
         cy.url().should('include','login')
+        cy.title().should('include','Zero - Log in')
     })
     it('filling username', () => {
         cy.viewport('iphone-x')
