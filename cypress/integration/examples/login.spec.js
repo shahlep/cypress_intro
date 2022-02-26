@@ -19,4 +19,9 @@ describe('This for login scenario', () => {
     it('error check', () => {
         cy.get('.alert-error').should('be.visible')
     })
+    it('checkbox fun', () => {
+        cy.get('#user_remember_me').click()
+        cy.wait(5000)
+        cy.get('input[type="checkbox"]').click()
+    })
 })
